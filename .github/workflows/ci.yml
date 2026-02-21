@@ -35,7 +35,8 @@ jobs:
       - name: Test SonarQube connectivity
         run: |
           curl -v -f http://sonarqube.192.168.2.81.nip.io || echo "Failed to reach SonarQube via Ingress"
-          curl -v -f http://192.168.2.81:30000 || echo "Failed to reach SonarQube via NodePort"
+          
+        #curl -v -f http://192.168.2.81:30000 || echo "Failed to reach SonarQube via NodePort"
 
       - name: Run tests with JaCoCo
         run: mvn test jacoco:report
