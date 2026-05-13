@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
 
 
 @RestController
-@CrossOrigin(origins = "http://frontend.192.168.2.189.nip.io")
+@CrossOrigin(origins = "http://frontend.192.168.2.81.nip.io")
 @RequestMapping("/tasks")
 public class TaskController {
 
