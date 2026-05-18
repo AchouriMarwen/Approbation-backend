@@ -80,7 +80,7 @@ public class AuthenticationController {
     ) {
         System.out.println("Received Request: " + request);
 
-        // Check if reCAPTCHA token is present and valid
+        // Check if reCAPTCHA token is present and valid ....
         if (request.getRecaptchaToken() == null || request.getRecaptchaToken().isEmpty()) {
             System.out.println("reCAPTCHA token is missing");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
